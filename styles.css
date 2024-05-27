@@ -49,3 +49,18 @@ footer {
     font-size: 0.8em;
     color: #666;
 }
+
+/* For desktop view */
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+/* For mobile view */
+@media (max-width: 600px) {
+    nav ul li {
+        display: inline-block;
+        width: calc(25% - 30px); /* Adjust the width as needed */
+        margin: 10px 0;
+    }
+}
