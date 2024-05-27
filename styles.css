@@ -1,36 +1,23 @@
-/* Reset styles */
 body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
+    background-color: #f0f0f0;
     color: #333;
 }
 
-/* Container styles */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
+header, nav, section, footer {
+    margin: 20px;
     padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Header styles */
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
     text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2em;
-}
-
-/* Navigation styles */
-nav {
-    background-color: #343a40;
-    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
 }
 
 nav ul {
@@ -46,46 +33,19 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
-    font-weight: bold;
+    color: #4CAF50;
 }
 
 nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Main content styles */
-main {
-    padding: 20px;
-}
-
-section {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 section h2 {
-    color: #007bff;
+    color: #4CAF50;
 }
 
-/* Footer styles */
 footer {
-    background-color: #343a40;
-    color: #fff;
-    padding: 20px;
     text-align: center;
-}
-
-/* Responsive styles */
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    body {
-        padding: 10px;
-    }
+    font-size: 0.8em;
+    color: #666;
 }
