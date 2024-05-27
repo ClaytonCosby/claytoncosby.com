@@ -15,7 +15,7 @@ header, nav, section, footer {
 }
 
 header {
-    text-align: right;
+    text-align: left;
     background-color: #b22222;
     color: white;
     font-family: 'roboto', sans-serif;
