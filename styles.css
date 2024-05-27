@@ -16,7 +16,7 @@ header, nav, section, footer {
 
 header {
     text-align: center;
-    background-color: #4CAF50;
+    background-color: #D69FA2;
     color: white;
 }
 
@@ -33,7 +33,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #D69FA2;
 }
 
 nav ul li a:hover {
@@ -41,7 +41,7 @@ nav ul li a:hover {
 }
 
 section h2 {
-    color: #4CAF50;
+    color: #D69FA2;
 }
 
 footer {
