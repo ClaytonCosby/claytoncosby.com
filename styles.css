@@ -25,6 +25,7 @@ section {
     margin: 20px;
     padding: 0; /* remove default padding, card handles it */
     background: none; /* transparent */
+}
 
     /* Contact Form */
 .contact-form {
@@ -92,7 +93,7 @@ section {
   box-shadow: 0 12px 30px rgba(0,0,0,0.4);
 }
 
-}
+
 
 nav ul {
     list-style-type: none;
