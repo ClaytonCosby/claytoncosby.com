@@ -51,6 +51,30 @@ footer {
     color: #666;
 }
 
+.about-container{
+display:flex;
+align-items:center;
+gap:40px;
+flex-wrap:wrap;
+}
+
+.about-text{
+flex:1;
+min-width:280px;
+}
+
+.about-image{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.about-image img{
+max-width:260px;
+border-radius:12px;
+border:2px solid #1e293b;
+}
+
 /* For desktop view */
 nav ul {
     display: flex;
