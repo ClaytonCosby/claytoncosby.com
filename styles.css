@@ -85,7 +85,7 @@ text-decoration:underline;
 }
 
 /* Contact Form Styles */
-.contact-form{
+contact-form{
   display:flex;
   flex-direction:column;
   gap:20px;
@@ -93,7 +93,7 @@ text-decoration:underline;
   margin:auto;
 }
 
-.contact-form label{
+contact-form label{
   font-size:0.9rem;
   color:#94a3b8;
   display:flex;
@@ -101,8 +101,8 @@ text-decoration:underline;
   font-weight:500;
 }
 
-.contact-form input,
-.contact-form textarea{
+contact-form input,
+contact-form textarea{
   background:#1e293b;
   border:1px solid #334155;
   border-radius:10px;
@@ -113,14 +113,14 @@ text-decoration:underline;
   transition: all 0.2s ease;
 }
 
-.contact-form input:focus,
-.contact-form textarea:focus{
+contact-form input:focus,
+contact-form textarea:focus{
   outline:none;
   border:1px solid #38bdf8;
   box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
 }
 
-.contact-form button{
+contact-form button{
   background:linear-gradient(90deg,#38bdf8,#0ea5e9);
   color:#0f172a;
   border:none;
@@ -132,14 +132,14 @@ text-decoration:underline;
   transition: all 0.2s ease;
 }
 
-.contact-form button:hover{
+contact-form button:hover{
   background:linear-gradient(90deg,#0ea5e9,#38bdf8);
   transform:translateY(-2px);
   box-shadow:0 4px 12px rgba(0,0,0,0.2);
 }
 
 /* Optional: Card shadow for depth */
-.card{
+card{
   background:#1e293b;
   padding:30px 20px;
   border-radius:16px;
@@ -148,7 +148,7 @@ text-decoration:underline;
   transition:all 0.2s ease;
 }
 
-.card:hover{
+card:hover{
   box-shadow:0 12px 30px rgba(0,0,0,0.4);
 }
 
