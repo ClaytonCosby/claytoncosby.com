@@ -200,6 +200,23 @@ footer {
     color: #64748b;
 }
 
+.social-links {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.social-links a {
+    color: #38bdf8;
+    text-decoration: none;
+    margin: 0 5px;
+    transition: color 0.2s;
+}
+
+.social-links a:hover {
+    color: #0ea5e9;
+    text-decoration: underline;
+}
+
 /* ==========================
    Navigation lists
 ========================== */
