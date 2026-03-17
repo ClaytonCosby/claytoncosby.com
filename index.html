@@ -1,57 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script>
-        if (window.location.hash === '#index.html') {
-            window.location.href = '/';
-        }
-    </script>
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This is my first website built from scratch!">
-    <meta name="keywords" content="HTML, CSS, JavaScript, Website, Beginner">
-    <meta name="author" content="Clayton Cosby">
-    <title>Clayton Cosby</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<title>Clayton Cosby</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f7f7f7;
+color:#222;
+line-height:1.6;
+}
+
+header{
+background:#111;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+nav{
+text-align:center;
+background:#222;
+padding:10px;
+}
+
+nav a{
+color:white;
+margin:0 15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+text-decoration:underline;
+}
+
+.container{
+max-width:900px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section{
+margin-bottom:60px;
+}
+
+h2{
+border-bottom:2px solid #ddd;
+padding-bottom:10px;
+}
+
+.project{
+margin-bottom:20px;
+}
+
+footer{
+text-align:center;
+padding:30px;
+background:#111;
+color:white;
+}
+
+</style>
+
 </head>
+
 <body>
-    <header style="display: flex; align-items: center; justify-content: space-between;">
-        <h1>Clayton Cosby</h1>
-        <nav>
-            <ul style="display: flex; gap: 30px; list-style: none; margin: 0; padding: 0;">
-                <li><a href="#index.html" style="color: white; text-decoration: none;">Home</a></li>
-                <li><a href="#about" style="color: white; text-decoration: none;">About</a></li>
-                <li><a href="#services" style="color: white; text-decoration: none;">Services</a></li>
-                <li><a href="#contact" style="color: white; text-decoration: none;">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>This section is about me.</p>
-        </section>
-        
-        <section id="services">
-            <h2>Services</h2>
-            <p>This section describes the services offered.</p>
-        </section>
-        
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>This section contains contact information.</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2024 Clayton Cosby</p>
-    </footer>
-    
-    <script src="scripts.js"></script>
+
+<header>
+<h1>Clayton Cosby</h1>
+<p>Entrepreneur • Builder • Lifelong Learner</p>
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#learning">Learning</a>
+<a href="#music">Music</a>
+<a href="#ideas">Ideas</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+<section id="about" class="section">
+<h2>About Me</h2>
+<p>
+I'm an entrepreneur focused on building businesses, learning new skills, and designing a life with freedom and purpose.
+</p>
+
+<p>
+My interests include ecommerce, fitness, music production, technology, and personal development. I believe in learning by building and constantly experimenting with new ideas.
+</p>
+</section>
+
+<section id="projects" class="section">
+<h2>Projects</h2>
+
+<div class="project">
+<h3>Ecommerce Stores</h3>
+<p>Building and testing ecommerce businesses through product research, marketing, and branding.</p>
+</div>
+
+<div class="project">
+<h3>House Flipping</h3>
+<p>Currently working on flipping a house as a real estate investment project.</p>
+</div>
+
+<div class="project">
+<h3>Future Clothing Brand</h3>
+<p>Planning to launch a clothing brand inspired by coastal and outdoor lifestyle.</p>
+</div>
+
+</section>
+
+<section id="learning" class="section">
+<h2>Things I'm Learning</h2>
+
+<ul>
+<li>Ecommerce & digital marketing</li>
+<li>Sales and persuasion</li>
+<li>Music production & mixing</li>
+<li>Spanish</li>
+<li>Fitness and nutrition</li>
+<li>Coding & technology</li>
+</ul>
+
+</section>
+
+<section id="music" class="section">
+<h2>Music</h2>
+
+<p>
+I've been producing music for over 10 years. I mainly create heavy electronic music and continue working to improve my mixing and sound design.
+</p>
+
+<p>
+More coming soon.
+</p>
+
+</section>
+
+<section id="ideas" class="section">
+<h2>Ideas & Thoughts</h2>
+
+<p>
+This section will be used to document ideas, experiments, and lessons learned while building businesses and learning new skills.
+</p>
+
+</section>
+
+<section id="contact" class="section">
+<h2>Contact</h2>
+
+<p>
+If you'd like to connect, feel free to reach out.
+</p>
+
+<p>
+Email: your@email.com
+</p>
+
+</section>
+
+</div>
+
+<footer>
+<p>© 2026 Clayton Cosby</p>
+</footer>
+
 </body>
 </html>
