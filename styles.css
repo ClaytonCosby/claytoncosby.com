@@ -1,96 +1,93 @@
 /* ==========================
    General Styles
 ========================== */
-body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #0f172a;
-    color: #e2e8f0;
-    line-height: 1.6;
+body{
+font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto;
+margin:0;
+background:#0f172a;
+color:#e2e8f0;
+line-height:1.6;
 }
+
 
 /* ==========================
    Header
 ========================== */
-header {
-    background: #020617;
-    color: white;
-    padding: 80px 20px;
-    text-align: center;
+header{
+background:#020617;
+color:white;
+padding:80px 20px;
+text-align:center;
 }
 
-header h1 {
-    font-size: 3.5rem;
-    letter-spacing: -1px;
-    margin-bottom: 10px;
+  header h1{
+font-size:3.5rem;
+letter-spacing:-1px;
+margin-bottom:10px;
 }
 
-header p {
-    color: #94a3b8;
-    font-size: 1.1rem;
+header p{
+color:#94a3b8;
+font-size:1.1rem;
 }
 
 /* ==========================
    Navigation
 ========================== */
-nav {
-    background: #020617;
-    padding: 15px;
-    border-top: 1px solid #1e293b;
-    border-bottom: 1px solid #1e293b;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    text-align: center;
+nav{
+text-align:center;
+background:#020617;
+padding:15px;
+border-top:1px solid #1e293b;
+border-bottom:1px solid #1e293b;
+position:sticky;
+top:0;
 }
 
-nav a {
-    color: #e2e8f0;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: 500;
+nav a{
+color:#e2e8f0;
+margin:0 15px;
+text-decoration:none;
+font-weight:500;
 }
 
-nav a:hover {
-    color: #38bdf8;
+nav a:hover{
+color:#38bdf8;
 }
 
 /* ==========================
    Container & Sections
 ========================== */
-.container {
-    max-width: 900px;
-    margin: auto;
-    padding: 60px 20px;
+.container{
+max-width:900px;
+margin:auto;
+padding:60px 20px;
 }
 
-.section {
-    margin-bottom: 80px;
+.section{
+margin-bottom:80px;
 }
 
-h2 {
-    border-bottom: 1px solid #1e293b;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
+h2{
+border-bottom:1px solid #1e293b;
+padding-bottom:10px;
+margin-bottom:20px;
 }
-
 /* ==========================
    Cards
 ========================== */
-.card {
-    background: #1e293b;
-    padding: 30px 20px;
-    border-radius: 16px;
-    margin-top: 20px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    transition: all 0.2s ease;
-    border: 1px solid #1e293b;
+  .card{
+background:#1e293b;
+padding:20px;
+border-radius:12px;
+margin-top:20px;
+transition:all .2s ease;
+border:1px solid #1e293b;
 }
 
-.card:hover {
-    transform: translateY(-4px);
-    border: 1px solid #38bdf8;
+.card:hover{
+transform:translateY(-4px);
+border:1px solid #38bdf8;
 }
 
 /* ==========================
