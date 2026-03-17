@@ -21,6 +21,12 @@ header {
     font-family: 'roboto', sans-serif;
 }
 
+section {
+    margin: 20px;
+    padding: 0; /* remove default padding, card handles it */
+    background: none; /* transparent */
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -49,6 +55,8 @@ footer {
     text-align: center;
     font-size: 0.8em;
     color: #666;
+    margin: 20px;
+    padding: 20px;
 }
 
 .about-container{
@@ -84,28 +92,6 @@ a:hover{
 text-decoration:underline;
 }
 
-
-/* For desktop view */
-nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-/* For mobile view */
-@media (max-width: 600px) {
-    nav ul {
-        flex-wrap: wrap;
-    }
-
-    nav ul li {
-        width: calc(50% - 30px); /* Adjust the width as needed */
-        margin: 10px 0;
-    }
-}
 /* Contact Form */
 .contact-form {
   display: flex;
@@ -170,4 +156,28 @@ nav ul li {
 
 .card:hover {
   box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+
+
+/* For desktop view */
+nav ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+/* For mobile view */
+@media (max-width: 600px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+
+    nav ul li {
+        width: calc(50% - 30px); /* Adjust the width as needed */
+        margin: 10px 0;
+    }
 }
