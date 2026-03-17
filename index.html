@@ -206,18 +206,25 @@ This section will be used to document ideas, experiments, and lessons learned wh
 <h2>Contact</h2>
 
 <div class="card">
-<p>
-If you'd like to connect, feel free to reach out.
-</p>
 
-<p>
-Email: <a href="mailto:claytoncosby1@gmail.com">claytoncosby1@gmail.com</a>
-</p>
+<form class="contact-form">
+
+<label for="name">Name</label>
+<input type="text" id="name" name="name" required>
+
+<label for="email">Email</label>
+<input type="email" id="email" name="email" required>
+
+<label for="message">Message</label>
+<textarea id="message" name="message" rows="5" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
 </div>
 
 </section>
-
-</div>
 
 <footer>
 <p>© 2026 Clayton Cosby</p>
