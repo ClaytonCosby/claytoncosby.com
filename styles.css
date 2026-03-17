@@ -25,6 +25,73 @@ section {
     margin: 20px;
     padding: 0; /* remove default padding, card handles it */
     background: none; /* transparent */
+
+    /* Contact Form */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.contact-form label {
+  font-size: 0.9rem;
+  color: #94a3b8;
+  font-weight: 500;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 14px 16px;
+  color: #e2e8f0;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border: 1px solid #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
+}
+
+.contact-form button {
+  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
+  color: #0f172a;
+  border: none;
+  padding: 14px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+}
+
+.contact-form button:hover {
+  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Card shadow for depth */
+.card {
+  background: #1e293b;
+  padding: 30px 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
 }
 
 nav ul {
@@ -92,71 +159,6 @@ a:hover{
 text-decoration:underline;
 }
 
-/* Contact Form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  max-width: 600px;
-  margin: auto;
-}
-
-.contact-form label {
-  font-size: 0.9rem;
-  color: #94a3b8;
-  font-weight: 500;
-}
-
-.contact-form input,
-.contact-form textarea {
-  background: #1e293b;
-  border: 1px solid #334155;
-  border-radius: 12px;
-  padding: 14px 16px;
-  color: #e2e8f0;
-  font-family: inherit;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  outline: none;
-  border: 1px solid #38bdf8;
-  box-shadow: 0 0 8px rgba(56, 189, 248, 0.4);
-}
-
-.contact-form button {
-  background: linear-gradient(90deg, #38bdf8, #0ea5e9);
-  color: #0f172a;
-  border: none;
-  padding: 14px 20px;
-  border-radius: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.2s ease;
-}
-
-.contact-form button:hover {
-  background: linear-gradient(90deg, #0ea5e9, #38bdf8);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Card shadow for depth */
-.card {
-  background: #1e293b;
-  padding: 30px 20px;
-  border-radius: 16px;
-  margin-top: 20px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-  transition: all 0.2s ease;
-}
-
-.card:hover {
-  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
-}
 
 
 
