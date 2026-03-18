@@ -335,17 +335,33 @@ height:100%;
   border-radius: 12px; /* optional, rounded corners */
 }
 
+/* Container for side-by-side layout */
 .side-by-side-images {
-  display: flex;           /* layout side by side */
-  gap: 20px;               /* space between images */
-  flex-wrap: wrap;         /* stack on small screens */
-  justify-content: center; /* center on desktop */
+  display: flex;
+  gap: 20px;              /* space between cards */
+  flex-wrap: wrap;         /* stack on mobile */
+  justify-content: center; /* center horizontally */
 }
 
-.side-by-side-images img {
-  width: 100%;            /* scale to container */
-  max-width: 45%;       /* limits size on large screens */
-  height: auto;           /* preserve square ratio */
-  border-radius: 12px;    /* optional rounded corners */
+/* Individual image cards */
+.image-card {
+  text-align: center;      /* center caption & image */
+  max-width: 300px;        /* optional desktop limit */
+  flex: 1 1 auto;          /* allow flex sizing */
+}
+
+/* Caption text above image */
+.image-caption {
+  margin-bottom: 10px;     /* space between caption & image */
+  font-weight: 500;
+  color: #e2e8f0;          /* match your theme */
+  font-size: 1rem;
+}
+
+/* Images */
+.image-card img {
+  width: 100%;             /* scale to container */
+  height: auto;            /* preserve square ratio */
+  border-radius: 12px;
   display: block;
 }
