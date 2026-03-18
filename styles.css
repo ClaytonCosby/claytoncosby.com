@@ -329,7 +329,7 @@ height:100%;
 
 .image-wrapper img {
   width: 100%;        /* makes it scale to container width */
-  max-width: 400px;   /* limits max size on large screens */
+  max-width: 600px;   /* limits max size on large screens */
   height: auto;       /* keeps aspect ratio */
   display: block;     /* removes bottom spacing */
   border-radius: 12px; /* optional, rounded corners */
