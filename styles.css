@@ -270,7 +270,7 @@ width:100%;
 @media (max-width: 768px){
 
 header{
-background-image:url("images/header-mobile.jpg");
+background-image:url("images/header-mobile.png");
 padding:60px 20px;
 text-align:center;
 }
