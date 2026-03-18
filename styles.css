@@ -347,7 +347,7 @@ height:100%;
 .image-card {
   flex: 0 1 45%;           /* grow 0, shrink 1, base width 45% */
   max-width: 300px;        /* optional max size */
-  text-align: center;      /* center caption & image */
+  text-align: left;      /* center caption & image */
 }
 
 /* Caption text above the image */
