@@ -279,3 +279,21 @@ text-align:center;
 
 }   
 }
+
+/* --- Music Section --- */
+#music{
+  margin:20px;
+}
+
+.track{
+  background:#1e293b;
+  padding:20px;
+  margin-bottom:20px;
+  border-radius:12px;
+  box-shadow:0 8px 20px rgba(0,0,0,0.3);
+}
+
+audio{
+  width:100%;
+  margin-top:10px;
+}
