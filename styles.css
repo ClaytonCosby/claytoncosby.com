@@ -335,13 +335,7 @@ height:100%;
   border-radius: 12px; /* optional, rounded corners */
 }
 
-/* Container for the two images */
-.side-by-side-images {
-  display: flex;           /* enable flexbox */
-  flex-wrap: wrap;         /* allow stacking on narrow screens */
-  gap: 20px;               /* space between cards */
-  justify-content: center; /* center horizontally */
-}
+
 
 /* Each image + caption card */
 .image-card {
