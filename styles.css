@@ -344,7 +344,7 @@ height:100%;
 
 .side-by-side-images img {
   width: 100%;            /* scale to container */
-  max-width: 300px;       /* limits size on large screens */
+  max-width: 100%;       /* limits size on large screens */
   height: auto;           /* preserve square ratio */
   border-radius: 12px;    /* optional rounded corners */
   display: block;
