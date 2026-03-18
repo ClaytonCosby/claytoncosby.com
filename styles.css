@@ -311,8 +311,8 @@ audio{
 
 .video-container{
 position:relative;
-width:560px;
-max-width:100%;
+width:100%;
+max-width:900px;
 padding-bottom:56.25%;
 height:0;
 overflow:hidden;
