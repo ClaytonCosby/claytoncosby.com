@@ -349,4 +349,5 @@ height:100%;
    object-fit: cover;   /* crops images to fill the height */
   border-radius: 12px;  /* optional styling */
   display: block;
+   gap: 5%;
 }
