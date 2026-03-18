@@ -246,3 +246,25 @@ nav ul li {
         margin: 10px 0;
     }
 }
+
+@media (max-width: 768px){
+
+.about-container{
+flex-direction:column;
+text-align:center;
+}
+
+.about-image{
+order:2;
+}
+
+.about-text{
+order:1;
+}
+
+.about-image img{
+max-width:300px;
+width:100%;
+}
+
+}
