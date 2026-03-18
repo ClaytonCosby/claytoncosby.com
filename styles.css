@@ -334,3 +334,19 @@ height:100%;
   display: block;     /* removes bottom spacing */
   border-radius: 12px; /* optional, rounded corners */
 }
+
+.side-by-side-images {
+  display: flex;
+  gap: 20px;           /* space between images */
+  flex-wrap: wrap;      /* stacks images on mobile */
+  justify-content: center; /* optional: center on desktop */
+}
+
+.side-by-side-images img {
+  width: 48%;           /* almost half, leaves gap in between */
+  max-width: 400px;     /* optional: limits large desktop size */
+  height: 200px;         /* keeps aspect ratio */
+   object-fit: cover;   /* crops images to fill the height */
+  border-radius: 12px;  /* optional styling */
+  display: block;
+}
