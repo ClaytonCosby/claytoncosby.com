@@ -335,24 +335,24 @@ height:100%;
   border-radius: 12px; /* optional, rounded corners */
 }
 
-/* Container for side-by-side layout */
+/* Container for the two images */
 .side-by-side-images {
-  display: flex;
-  gap: 20px;              /* space between cards */
-  flex-wrap: wrap;         /* stack on mobile */
+  display: flex;           /* enable flexbox */
+  flex-wrap: wrap;         /* allow stacking on narrow screens */
+  gap: 20px;               /* space between cards */
   justify-content: center; /* center horizontally */
 }
 
-/* Individual image cards */
+/* Each image + caption card */
 .image-card {
+  flex: 0 1 45%;           /* grow 0, shrink 1, base width 45% */
+  max-width: 300px;        /* optional max size */
   text-align: center;      /* center caption & image */
-  max-width: 300px;        /* optional desktop limit */
-  flex: 1 1 auto;          /* allow flex sizing */
 }
 
-/* Caption text above image */
+/* Caption text above the image */
 .image-caption {
-  margin-bottom: 10px;     /* space between caption & image */
+  margin-bottom: 10px;
   font-weight: 500;
   color: #e2e8f0;          /* match your theme */
   font-size: 1rem;
@@ -360,8 +360,8 @@ height:100%;
 
 /* Images */
 .image-card img {
-  width: 100%;             /* scale to container */
-  height: auto;            /* preserve square ratio */
-  border-radius: 12px;
+  width: 100%;            /* fill the card width */
+  height: auto;           /* keep aspect ratio */
   display: block;
+  border-radius: 12px;    /* optional rounded corners */
 }
