@@ -360,48 +360,4 @@ height:100%;
   border-radius: 12px;    /* optional rounded corners */
 }
 
-.project-card {
-  display: flex;
-  flex-direction: column; /* mobile layout */
-  gap: 20px;
-  margin-bottom: 40px;
-}
-
-/* Image */
-.project-image {
-  display: flex;
-  justify-content: center;
-}
-
-.project-image img {
-  width: 100%;
-  max-width: 250px; /* controls desktop size */
-  height: auto;
-  border-radius: 10px;
-}
-
-/* Text */
-.project-text {
-  text-align: left;
-}
-
-/* Desktop layout */
-@media (min-width: 768px) {
-
-  .project-card {
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .project-text {
-    flex: 2;
-  }
-
-  .project-image {
-    flex: 1;
-    justify-content: center;
-  }
-
-}
-
 }
