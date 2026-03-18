@@ -15,6 +15,9 @@ line-height:1.6;
 ========================== */
 header{
 background:#020617;
+   background-image:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url("images/header-desktop.png");
    background-image: url("images/header-desktop.png");
     background-size: cover;
     background-position: center;
