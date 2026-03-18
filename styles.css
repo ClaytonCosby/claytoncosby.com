@@ -308,3 +308,30 @@ audio{
 .linked-image:hover{
   transform: scale(1.05);
 }
+
+.track{
+display:flex;
+gap:20px;
+align-items:center;
+background:white;
+padding:20px;
+margin-bottom:20px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.track-cover{
+width:90px;
+height:90px;
+object-fit:cover;
+border-radius:6px;
+}
+
+.track-info{
+flex:1;
+}
+
+audio{
+width:100%;
+margin-top:8px;
+}
