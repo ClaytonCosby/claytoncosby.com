@@ -15,6 +15,10 @@ line-height:1.6;
 ========================== */
 header{
 background:#020617;
+   background-image: url("images/header-desktop.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 color:white;
 padding:80px 20px;
 text-align:center;
