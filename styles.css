@@ -336,18 +336,16 @@ height:100%;
 }
 
 .side-by-side-images {
-  display: flex;
-  gap: 20px;           /* space between images */
-  flex-wrap: wrap;      /* stacks images on mobile */
-  justify-content: center; /* optional: center on desktop */
+  display: flex;            /* flex layout */
+  gap: 20px;                /* gap between images */
+  flex-wrap: wrap;          /* stack on narrow screens */
+  justify-content: center;  /* center images on desktop */
 }
 
 .side-by-side-images img {
-  width: 48%;           /* almost half, leaves gap in between */
-  max-width: 400px;     /* optional: limits large desktop size */
-  height: 200px;         /* keeps aspect ratio */
-   object-fit: cover;   /* crops images to fill the height */
-  border-radius: 12px;  /* optional styling */
+  flex: 1 1 auto;           /* keep natural width as much as possible */
+  max-width: 48%;            /* allows 2 images side by side with gap */
+  height: auto;             /* maintain natural aspect ratio */
+  border-radius: 12px;      /* optional styling */
   display: block;
-   gap: 5%;
 }
