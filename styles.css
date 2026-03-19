@@ -327,24 +327,25 @@ width:100%;
 height:100%;
 }
 
-/* Force parent section to flex layout */
+/* Parent section layout */
 .image-section {
-  display: flex !important;
-  gap: 40px !important;
-  flex-wrap: wrap;
-  justify-content: center; /* centers cards if there’s extra space */
+  display: flex !important;       /* force horizontal layout */
+  gap: 40px !important;           /* spacing between cards */
+  flex-wrap: wrap;                /* allow wrap on small screens */
+  justify-content: center;        /* center cards if extra space */
 }
 
-/* Force cards to half width on desktop */
+/* Each card */
 .image-card {
-  flex: 0 0 48% !important;
+  flex: 0 0 48% !important;       /* force ~half width */
+  max-width: 450px;               /* optional max width */
   text-align: center;
+  box-sizing: border-box;         /* include padding/border in width */
 }
 
 /* Images inside cards */
 .image-card img {
   width: 100%;
-  max-width: 450px;   /* limits huge images */
   height: auto;
   display: block;
   margin: 0 auto;
@@ -354,10 +355,7 @@ height:100%;
 /* Mobile stacked layout */
 @media (max-width: 768px) {
   .image-card {
-    flex: 0 0 100% !important; /* full width on mobile */
-  }
-
-  .image-card img {
+    flex: 0 0 100% !important;    /* full width on mobile */
     max-width: 100%;
   }
 }
