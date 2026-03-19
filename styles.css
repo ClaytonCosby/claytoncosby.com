@@ -338,28 +338,29 @@ height:100%;
 
 
 .image-section {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 40px;
 }
 
 .image-card {
+  flex: 1;
   text-align: center;
 }
 
 .image-card img {
   max-width: 500px;
-  margin: 0 auto;
-   width: 100%;
+  width: 100%;
   height: auto;
+  margin: 0 auto;
   display: block;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
   .image-section {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
+}
 }
 
 }
