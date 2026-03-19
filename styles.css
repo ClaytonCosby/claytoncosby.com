@@ -336,22 +336,21 @@ height:100%;
 }
 
 
-
 .image-section {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
 }
 
 .image-card {
-  width: 50%;
-   flex: 1;
   text-align: center;
 }
 
 .image-card img {
-  max-width: 500px;
   width: 100%;
-  height: auto;
+  max-width: 450px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   margin: 0 auto;
   display: block;
 }
@@ -359,9 +358,8 @@ height:100%;
 /* Mobile */
 @media (max-width: 768px) {
   .image-section {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
-}
 }
 
 }
