@@ -327,33 +327,34 @@ width:100%;
 height:100%;
 }
 
-/* Parent section layout */
+/* Force parent section to flex layout */
 .image-section {
-  display: grid !important;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  align-items: start;
+  display: flex !important;
+  gap: 40px !important;
+  flex-wrap: wrap;
+  justify-content: center; /* centers cards if there’s extra space */
 }
 
-/* Each card */
+/* Force cards to half width on desktop */
 .image-card {
+  flex: 0 0 48% !important;
   text-align: center;
 }
 
-/* Images */
+/* Images inside cards */
 .image-card img {
   width: 100%;
-  max-width: 450px;   /* optional: limits huge images */
+  max-width: 450px;   /* limits huge images */
   height: auto;
   display: block;
   margin: 0 auto;
-  border-radius: 12px; /* optional rounded corners */
+  border-radius: 12px;
 }
 
 /* Mobile stacked layout */
 @media (max-width: 768px) {
-  .image-section {
-    grid-template-columns: 1fr;
+  .image-card {
+    flex: 0 0 100% !important; /* full width on mobile */
   }
 
   .image-card img {
