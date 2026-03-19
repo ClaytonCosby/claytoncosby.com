@@ -337,27 +337,27 @@ height:100%;
 
 
 
-/* Each image + caption card */
+.image-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
 .image-card {
-  flex: 0 1 45%;           /* grow 0, shrink 1, base width 45% */
-  max-width: 300px;        /* optional max size */
-  text-align: left;      /* center caption & image */
+  text-align: center;
 }
 
-/* Caption text above the image */
-.image-caption {
-  margin-bottom: 10px;
-  font-weight: 500;
-  color: #e2e8f0;          /* match your theme */
-  font-size: 1rem;
-}
-
-/* Images */
 .image-card img {
-  width: 100%;            /* fill the card width */
-  height: auto;           /* keep aspect ratio */
+  width: 100%;
+  height: auto;
   display: block;
-  border-radius: 12px;    /* optional rounded corners */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .image-section {
+    grid-template-columns: 1fr;
+  }
 }
 
 }
