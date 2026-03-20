@@ -331,34 +331,55 @@ height:100%;
 .image-section {
   display: flex;
   gap: 40px;
-  justify-content: center; /* centers cards on wide screens */
-  flex-wrap: wrap;         /* allows stacking on smaller screens */
+  justify-content: center;
+  align-items: stretch; /* ensures cards match height */
+  flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1000px;       /* optional, keeps section from stretching too far */
+  max-width: 1000px;
   padding: 20px;
 }
 
 /* Each card */
 .image-card {
-  flex: 0 0 45%;            /* roughly half width on desktop */
-  max-width: 450px;         /* prevents huge images */
-  text-align: center;
+  flex: 0 0 45%;
+  max-width: 450px;
   box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Caption text */
+.image-caption {
+  margin-bottom: 15px;
+  min-height: 70px; /* keeps images aligned even if text length differs */
+  text-align: left; /* looks cleaner for text blocks */
+  line-height: 1.4;
 }
 
 /* Images */
 .image-card img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 12px;
+  display: block;
+  margin-top: auto; /* keeps images aligned */
+  object-fit: cover;
 }
 
 /* Mobile stacked layout */
 @media (max-width: 768px) {
+  .image-section {
+    gap: 25px;
+  }
+
   .image-card {
     flex: 0 0 100%;
     max-width: 100%;
-    margin-bottom: 20px;   /* spacing between stacked cards */
+  }
+
+  .image-caption {
+    text-align: center; /* better for mobile */
+    min-height: auto;
   }
 }
