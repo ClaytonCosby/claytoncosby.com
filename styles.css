@@ -327,35 +327,38 @@ width:100%;
 height:100%;
 }
 
-/* Parent section layout */
+/* Parent layout */
 .image-section {
-  display: flex !important;       /* force horizontal layout */
-  gap: 40px !important;           /* spacing between cards */
-  flex-wrap: wrap;                /* allow wrap on small screens */
-  justify-content: center;        /* center cards if extra space */
+  display: flex;
+  gap: 40px;
+  justify-content: center; /* centers cards on wide screens */
+  flex-wrap: wrap;         /* allows stacking on smaller screens */
+  margin: 0 auto;
+  max-width: 1000px;       /* optional, keeps section from stretching too far */
+  padding: 20px;
 }
 
 /* Each card */
 .image-card {
-  flex: 0 0 48% !important;       /* force ~half width */
-  max-width: 450px;               /* optional max width */
+  flex: 0 0 45%;            /* roughly half width on desktop */
+  max-width: 450px;         /* prevents huge images */
   text-align: center;
-  box-sizing: border-box;         /* include padding/border in width */
+  box-sizing: border-box;
 }
 
-/* Images inside cards */
+/* Images */
 .image-card img {
   width: 100%;
   height: auto;
   display: block;
-  margin: 0 auto;
   border-radius: 12px;
 }
 
 /* Mobile stacked layout */
 @media (max-width: 768px) {
   .image-card {
-    flex: 0 0 100% !important;    /* full width on mobile */
+    flex: 0 0 100%;
     max-width: 100%;
+    margin-bottom: 20px;   /* spacing between stacked cards */
   }
 }
